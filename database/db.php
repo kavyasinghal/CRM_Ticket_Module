@@ -2,7 +2,7 @@
 $host = 'localhost';
 $dbname = 'crm_ticket_db';
 $username = 'root'; 
-$password = 'kavy123';
+$password = 'db_password';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
