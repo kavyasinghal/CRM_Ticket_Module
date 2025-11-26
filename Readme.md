@@ -11,4 +11,4 @@ Installation:
 2. Create database name crm_ticket_db in MySQL.
 3. Import `database/schema.sql` to MySQL.
 4. Configure `database/db.php` with your credentials.
-5. Open `frontend/login.php` in browser.
+5. Open `localhost/frontend/login.php` in browser.
