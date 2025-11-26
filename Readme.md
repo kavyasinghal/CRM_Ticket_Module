@@ -1,7 +1,7 @@
 CRM_Ticket_Module
 ====================================
 
-Structure:
+Project Structure:
 - /database/   -> SQL schema and DB connection config
 - /backend/    -> PHP Logic scripts (Login, Register, CRUD Actions)
 - /frontend/   -> HTML Views (Pages you actually visit in browser)
