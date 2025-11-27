@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS crm_ticket_db;
 USE crm_ticket_db;
 
-CREATE TABLE users1 (
+CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE users1 (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE TABLE tickets1 (
+CREATE TABLE tickets (
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     description TEXT NOT NULL,
@@ -27,7 +27,6 @@ CREATE TABLE tickets1 (
     FOREIGN KEY (assigned_to) REFERENCES users(id)
 );
 
-INSERT INTO users1 (username, password, name, role) VALUES 
-('admin', 'password', 'System Admin', 'admin'),
+INSERT INTO users (username, password, name, role) VALUES 
 ('user1', 'password', 'John Doe', 'user'),
 ('user2', 'password', 'Jane Smith', 'user');
