@@ -2,6 +2,32 @@ CRM_Ticket_Module
 ====================================
 
 Project Structure:
+PHP_CRM_V2/
+│
+├── backend/
+│   ├── auth_login.php
+│   ├── auth_logout.php
+│   ├── auth_register.php
+│   ├── ticket_create.php
+│   ├── ticket_update.php
+│
+├── database/
+│   ├── db.php
+│   ├── schema.sql
+│
+├── frontend/
+│   ├── includes/
+│   │   ├── footer.php
+│   │   ├── header.php
+│   │
+│   ├── create_ticket.php
+│   ├── index.php
+│   ├── login.php
+│   ├── register.php
+│   ├── users.php
+│   ├── view_ticket.php
+
+
 - /database/   -> SQL schema and DB connection config
 - /backend/    -> PHP Logic scripts (Login, Register, CRUD Actions)
 - /frontend/   -> HTML Views (Pages you actually visit in browser)
