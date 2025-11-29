@@ -23,20 +23,6 @@
 │   ├── view_ticket.php
 </pre>
 
-<pre>
-  <ol>
-<li>/database/: Contains the database schema and configuration.</li>
-•	schema.sql defines the tables and initial data for the CRM ticket database.
-•	db.php holds the database connection settings (hostname, username, password) for the application.
-•	/backend/: Contains server-side PHP scripts and logic.
-•	Includes user authentication scripts (auth_login.php, auth_logout.php, auth_register.php) for handling login, logout, and registration.
-•	Includes ticket-related scripts (ticket_create.php, ticket_update.php) for creating and updating tickets in the database.
-•	/frontend/: Contains the client-side PHP/HTML pages viewed in the browser.
-•	Pages like create_ticket.php, index.php, login.php, register.php, users.php, and view_ticket.php make up the user interface for the CRM system.
-•	The includes/ subfolder holds common components: header.php and footer.php, which are included on multiple frontend pages for consistent layout and design.
-    </ol>
-</pre>
-
 <h2>Installation Manual</h2>
 <pre>
 1.	Move the project folder: Copy the CRM_Ticket_Module directory into your local web server directory. For example, use **xampp/htdocs/CRM_Ticket_Module (XAMPP)** **or wamp64/www/CRM_Ticket_Module (WAMP)**.
