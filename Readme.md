@@ -60,6 +60,6 @@ With these steps completed, your CRM Ticket Module should be up and running on y
 <p>Role-based access is determined via the role column in users1.</p>
 
 <p align="center">
-  <img src="images/Entity_Relationship_Diagram.png" width="300" height="500" border="1px solid black" />
+  <img src="images/Entity_Relationship_Diagram.png" width="300" style="border:2px solid #444; border-radius:6px; padding:4px;" />
 </p>
 
