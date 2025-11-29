@@ -1,6 +1,6 @@
 <h2>PHP CRM Ticket Module</h2>
 
-<h3>Project Directory Structure</h3>
+<h3>📁 Project Directory Structure</h3>
 <pre>CRM_Ticket_Module/
 ├── backend/
 │   ├── auth_login.php
@@ -23,7 +23,7 @@
 │   ├── view_ticket.php
 </pre>
 
-<h3>Installation Manual</h3>
+<h3>⚙️ Installation Manual</h3>
 <pre>
 1.	Move the project folder: Copy the CRM_Ticket_Module directory into your local web server directory. For example, use **xampp/htdocs/CRM_Ticket_Module (XAMPP)** **or wamp64/www/CRM_Ticket_Module (WAMP)**.
 2.	Create the database: In your MySQL server (e.g., using phpMyAdmin or the MySQL CLI), create a new database named **crm_ticket_db**.
@@ -47,11 +47,19 @@ With these steps completed, your CRM Ticket Module should be up and running on y
 </ul>
 <p>This enforces relational integrity and allows per-user filtering in queries.</p>
 <p align="center">
-  <img src="images/Database_Layout.png" width="300" height="300" />
+  <img src="images/Database_Layout.png" width="300" height="500" border="1px solid black"/>
 </p>
 
+<h3>🔗 Entity Relationship Diagram (ERD)</h3>
+
+<p>The users1 table has a one-to-many relationship with the tickets1 table in two directions:</p>
+<ul>
+  <li>One user can create multiple tickets (created_by)</li>
+  <li>One user can be assigned multiple tickets (assigned_to)</li>
+</ul>
+<p>Role-based access is determined via the role column in users1.</p>
 
 <p align="center">
-  <img src="images/Entity_Relationship_Diagram.png" width="500" />
+  <img src="images/Entity_Relationship_Diagram.png" width="300" height="500" border="1px solid black" />
 </p>
 
