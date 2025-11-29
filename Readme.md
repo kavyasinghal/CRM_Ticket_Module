@@ -1,7 +1,7 @@
 PHP CRM Ticket Module
-A simple Customer Relationship Management (CRM) ticketing system built with PHP. This README provides the project structure, folder explanations, and instructions to set up and run the application locally.
-Directory Structure
-PHP_CRM_V2/
+
+**Project Directory Structure**
+<pre>PHP_CRM_V2/
 ├── backend/
 │   ├── auth_login.php
 │   ├── auth_logout.php
@@ -21,7 +21,7 @@ PHP_CRM_V2/
 │   ├── register.php
 │   ├── users.php
 │   ├── view_ticket.php
-Folder Descriptions
+</pre>
 •	/database/: Contains the database schema and configuration.
 •	schema.sql defines the tables and initial data for the CRM ticket database.
 •	db.php holds the database connection settings (hostname, username, password) for the application.
@@ -31,11 +31,14 @@ Folder Descriptions
 •	/frontend/: Contains the client-side PHP/HTML pages viewed in the browser.
 •	Pages like create_ticket.php, index.php, login.php, register.php, users.php, and view_ticket.php make up the user interface for the CRM system.
 •	The includes/ subfolder holds common components: header.php and footer.php, which are included on multiple frontend pages for consistent layout and design.
-Installation
-1.	Move the project folder: Copy the PHP_CRM_V2 directory into your local web server directory. For example, use xampp/htdocs/CRM_Ticket_Module (XAMPP) or wamp64/www/CRM_Ticket_Module (WAMP).
-2.	Create the database: In your MySQL server (e.g., using phpMyAdmin or the MySQL CLI), create a new database named crm_ticket_db.
-3.	Import the schema: Import the database/schema.sql file into the crm_ticket_db database to create the necessary tables and initial data.
-4.	Configure database connection: Open database/db.php and update the MySQL credentials (hostname, username, and password) to match your local setup.
-5.	Launch the application: Open your web browser and navigate to http://localhost/frontend/login.php to access the CRM Ticket Module login screen. From there, you can register a new user or log in to start creating and managing tickets.
+
+
+**Installation Manual**
+1.	Move the project folder: Copy the CRM_Ticket_Module directory into your local web server directory. For example, use **xampp/htdocs/CRM_Ticket_Module (XAMPP)** **or wamp64/www/CRM_Ticket_Module (WAMP)**.
+2.	Create the database: In your MySQL server (e.g., using phpMyAdmin or the MySQL CLI), create a new database named **crm_ticket_db**.
+3.	Import the schema: Import the **database/schema.sql** file into the crm_ticket_db database to create the necessary tables and initial data.
+4.	Configure database connection: Open **database/db.php** and update the MySQL credentials (hostname, username, and password) to match your local setup.
+5.	Launch the application: Open your web browser and navigate to **http://localhost/frontend/login.php** to access the CRM Ticket Module login screen. From there, you can register a new user or log in to start creating and managing tickets.
 With these steps completed, your CRM Ticket Module should be up and running on your local machine.
-________________________________________
+
+
