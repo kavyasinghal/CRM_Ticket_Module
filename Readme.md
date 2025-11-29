@@ -1,6 +1,6 @@
-<h1>PHP CRM Ticket Module</h1>
+<h2>PHP CRM Ticket Module</h2>
 
-<h2>Project Directory Structure</h2>
+<h3>Project Directory Structure</h3>
 <pre>CRM_Ticket_Module/
 ├── backend/
 │   ├── auth_login.php
@@ -23,7 +23,7 @@
 │   ├── view_ticket.php
 </pre>
 
-<h2>Installation Manual</h2>
+<h3>Installation Manual</h3>
 <pre>
 1.	Move the project folder: Copy the CRM_Ticket_Module directory into your local web server directory. For example, use **xampp/htdocs/CRM_Ticket_Module (XAMPP)** **or wamp64/www/CRM_Ticket_Module (WAMP)**.
 2.	Create the database: In your MySQL server (e.g., using phpMyAdmin or the MySQL CLI), create a new database named **crm_ticket_db**.
@@ -33,10 +33,23 @@
 With these steps completed, your CRM Ticket Module should be up and running on your local machine.
 </pre>
 
+<h3>🧱 Database Layout</h3>
 
+<h4>The system uses two tables:</h4>
+<ul>
+  <li>users1: Stores user credentials and roles</li>
+  <li>tickets1: Stores all ticket-related data</li>
+</ul>
+<h4>Each ticket is linked to:</h4>
+<ul>
+  <li>its creator (created_by)</li>
+  <li>its assignee (assigned_to)</li>
+</ul>
+<p>This enforces relational integrity and allows per-user filtering in queries.</p>
 <p align="center">
-  <img src="images/Database_Layout.png" width="500" />
+  <img src="images/Database_Layout.png" width="300" height="300" />
 </p>
+
 
 <p align="center">
   <img src="images/Entity_Relationship_Diagram.png" width="500" />
