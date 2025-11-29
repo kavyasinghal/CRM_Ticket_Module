@@ -33,3 +33,4 @@
 With these steps completed, your CRM Ticket Module should be up and running on your local machine.
 </pre>
 
+![Database_Layout](images/Database_Layout.png)
