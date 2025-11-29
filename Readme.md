@@ -51,7 +51,7 @@ With these steps completed, your CRM Ticket Module should be up and running on y
 </p> -->
 <p align="center">
   <div style="border: 2px solid black; padding: 10px; display: inline-block; border-radius: 8px;">
-    <img src="images/Database_Layout.png" width="500" />
+    <img src="images/Database_Layout.png" width="500" height="500" />
   </div>
 </p>
 
