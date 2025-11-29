@@ -1,7 +1,7 @@
 <h1>PHP CRM Ticket Module</h1>
 
 <h2>Project Directory Structure</h2>
-<pre><h3>CRM_Ticket_Module/</h3>
+<pre>CRM_Ticket_Module/
 ├── backend/
 │   ├── auth_login.php
 │   ├── auth_logout.php
@@ -24,7 +24,8 @@
 </pre>
 
 <pre>
-•	/database/: Contains the database schema and configuration.
+  <ol>
+<li>/database/: Contains the database schema and configuration.</li>
 •	schema.sql defines the tables and initial data for the CRM ticket database.
 •	db.php holds the database connection settings (hostname, username, password) for the application.
 •	/backend/: Contains server-side PHP scripts and logic.
@@ -33,6 +34,7 @@
 •	/frontend/: Contains the client-side PHP/HTML pages viewed in the browser.
 •	Pages like create_ticket.php, index.php, login.php, register.php, users.php, and view_ticket.php make up the user interface for the CRM system.
 •	The includes/ subfolder holds common components: header.php and footer.php, which are included on multiple frontend pages for consistent layout and design.
+    </ol>
 </pre>
 
 <h2>Installation Manual</h2>
