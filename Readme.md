@@ -32,7 +32,8 @@
 5.	Launch the application: Open your web browser and navigate to <b>http://localhost/frontend/login.php</b> to access the CRM Ticket Module login screen. From there, you can register a new user or log in to start creating and managing tickets.
 </pre>
 
-<div><h3>🧱 Database Layout</h3>
+
+<h3>🧱 Database Layout</h3>
 
 <h4>The system uses two tables:</h4>
 <ul>
@@ -53,7 +54,7 @@
     <img src="images/Database_Layout.png" width="500" height="800" />
   </div>
 </p>
-</div>
+
 
 <h3>🔗 Entity Relationship Diagram (ERD)</h3>
 
