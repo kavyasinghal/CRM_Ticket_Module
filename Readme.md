@@ -42,8 +42,8 @@
 </ul>
 <h4>Each ticket is linked to:</h4>
 <ul>
-  <li>Tciket creator (created_by)</li>
-  <li>Tciket assignee (assigned_to)</li>
+  <li>Ticket creator (created_by)</li>
+  <li>Ticket assignee (assigned_to)</li>
 </ul>
 <p>This enforces relational integrity and allows per-user filtering in queries.</p>
 <!-- <p align="center">
