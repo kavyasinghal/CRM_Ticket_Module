@@ -51,7 +51,7 @@
 </p> -->
 <p align="center">
   <div style="border: 2px solid black; padding: 10px; display: inline-block; border-radius: 8px;">
-    <img src="Untitled diagram-2025-12-01-042332.png" width="500" height="800" />
+    <img src="images/Database_Layout.png" width="500" height="800" />
   </div>
 </p>
 
