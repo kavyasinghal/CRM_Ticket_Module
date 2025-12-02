@@ -25,11 +25,11 @@
 
 <h3>⚙️ Installation Manual</h3>
 <pre>
-1.	Move the project folder: Copy the CRM_Ticket_Module directory into your local web server directory. For example, use <b>xampp/htdocs/CRM_Ticket_Module (XAMPP)</b> or <b>wamp64/www/CRM_Ticket_Module (WAMP)</b>.
-2.	Create the database: In your MySQL server (e.g., using phpMyAdmin or the MySQL CLI), create a new database named <b>crm_ticket_db</b>.
-3.	Import the schema: Import the <b>database/schema.sql</b> file into the crm_ticket_db database to create the necessary tables and initial data.
-4.	Configure database connection: Open <b>database/db.php</b> and update the MySQL credentials (hostname, username, and password) to match your local setup.
-5.	Launch the application: Open your web browser and navigate to <b>http://localhost/frontend/login.php</b> to access the CRM Ticket Module login screen. From there, you can register a new user or log in to start creating and managing tickets.
+1.	Copy CRM_Ticket_Module directory into your local web server directory, use <b>xampp/htdocs/CRM_Ticket_Module (XAMPP)</b> or <b>wamp64/www/CRM_Ticket_Module (WAMP)</b>.
+2. In your MySQL server (e.g., using phpMyAdmin or the MySQL CLI), create a new database named <b>crm_ticket_db</b>.
+3. Import the <b>database/schema.sql</b> file into the crm_ticket_db database to create the necessary tables and initial data.
+4. Open <b>database/db.php</b> and update the MySQL credentials (hostname, username, and password) to match your local setup.
+5. Open your web browser and navigate to <b>http://localhost/frontend/login.php</b> to access the CRM Ticket Module login/register screen.
 </pre>
 
 
@@ -46,9 +46,6 @@
   <li>Ticket assignee (assigned_to)</li>
 </ul>
 <p>This enforces relational integrity and allows per-user filtering in queries.</p>
-<!-- <p align="center">
-  <img src="images/Database_Layout.png" width="300" height="500" border="1px solid black"/>
-</p> -->
 <p align="center">
   <div style="border: 2px solid black; padding: 10px; display: inline-block; border-radius: 8px;">
     <img src="images/Database_Layout.png" width="500" height="800" />
@@ -64,10 +61,6 @@
   <li>One user can be assigned multiple tickets (assigned_to)</li>
 </ul>
 <p>Role-based access is determined via the role column in users1.</p>
-
-<!-- <p align="center">
-  <img src="images/Entity_Relationship_Diagram.png" width="300" style="border:2px solid #444; border-radius:6px; padding:4px;" />
-</p> -->
 <p align="center">
   <div style="border: 2px solid black; padding: 10px; display: inline-block; border-radius: 8px;">
     <img src="images/Entity_Relationship_Diagram.png" width="500" />
