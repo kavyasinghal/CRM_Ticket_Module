@@ -25,7 +25,7 @@
 
 <h3>⚙️ Installation Manual</h3>
 <pre>
-1.	Copy CRM_Ticket_Module directory into your local web server directory, use <b>xampp/htdocs/CRM_Ticket_Module (XAMPP)</b> or <b>wamp64/www/CRM_Ticket_Module (WAMP)</b>.
+1. Copy CRM_Ticket_Module directory into your local web server directory, use <b>xampp/htdocs/CRM_Ticket_Module (XAMPP)</b> or <b>wamp64/www/CRM_Ticket_Module (WAMP)</b>.
 2. In your MySQL server (e.g., using phpMyAdmin or the MySQL CLI), create a new database named <b>crm_ticket_db</b>.
 3. Import the <b>database/schema.sql</b> file into the crm_ticket_db database to create the necessary tables and initial data.
 4. Open <b>database/db.php</b> and update the MySQL credentials (hostname, username, and password) to match your local setup.
