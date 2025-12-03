@@ -28,5 +28,6 @@ CREATE TABLE tickets (
 );
 
 INSERT INTO users (username, password, name, role) VALUES 
+('admin', 'password', 'System Admin', 'admin'),
 ('user1', 'password', 'John Doe', 'user'),
 ('user2', 'password', 'Jane Smith', 'user');
