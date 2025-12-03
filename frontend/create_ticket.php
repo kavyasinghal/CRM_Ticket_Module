@@ -27,7 +27,9 @@ include 'includes/header.php';
                         <select name="assigned_to" class="form-select">
                             <option value="">-- Unassigned --</option>
                             <?php foreach($users as $u): ?>
-                                <option value="<?php echo $u['id']; ?>"><?php echo htmlspecialchars($u['name']); ?></option>
+                                <?php if ($u['id'] != $_SESSION['user_id']): ?>
+                                    <option value="<?php echo $u['id']; ?>"><?php echo htmlspecialchars($u['name']); ?></option>
+                                <?php endif; ?>
                             <?php endforeach; ?>
                         </select>
                     </div>
