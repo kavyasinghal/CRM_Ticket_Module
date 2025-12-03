@@ -12,6 +12,10 @@ $users = $user_stmt->fetchAll();
 
 $is_author = ($ticket['created_by'] == $_SESSION['user_id']);
 $is_assignee = ($ticket['assigned_to'] == $_SESSION['user_id']);
+$is_admin = ($_SESSION['role'] == 'admin');
+
+
+$can_edit_details = ($is_author || $is_admin);
 
 include 'includes/header.php';
 ?>
@@ -33,12 +37,12 @@ include 'includes/header.php';
                     
                     <div class="mb-3">
                         <label class="form-label">Title</label>
-                        <input type="text" name="title" class="form-control" value="<?php echo htmlspecialchars($ticket['title']); ?>" <?php echo !$is_author ? 'readonly' : ''; ?>>
+                        <input type="text" name="title" class="form-control" value="<?php echo htmlspecialchars($ticket['title']); ?>" <?php echo !$can_edit_details ? 'readonly' : ''; ?>>
                     </div>
                     
                     <div class="mb-3">
                         <label class="form-label">Description</label>
-                        <textarea name="description" class="form-control" rows="5" <?php echo !$is_author ? 'readonly' : ''; ?>><?php echo htmlspecialchars($ticket['description']); ?></textarea>
+                        <textarea name="description" class="form-control" rows="5" <?php echo !$can_edit_details ? 'readonly' : ''; ?>><?php echo htmlspecialchars($ticket['description']); ?></textarea>
                     </div>
 
                     <div class="mb-3">
@@ -50,15 +54,17 @@ include 'includes/header.php';
                         </select>
                     </div>
                     
-                    <?php if ($is_author): ?>
+                    <?php if ($can_edit_details): ?>
                         <div class="mb-3">
                             <label class="form-label">Assign To</label>
                             <select name="assigned_to" class="form-select">
-                                <option value="">-- Unassigned --</option>
+                                <option value="">- Unassigned -</option>
                                 <?php foreach($users as $u): ?>
-                                    <option value="<?php echo $u['id']; ?>" <?php echo $ticket['assigned_to'] == $u['id'] ? 'selected' : ''; ?>>
-                                        <?php echo htmlspecialchars($u['name']); ?>
-                                    </option>
+                                    <?php if ($u['id'] != $_SESSION['user_id']): ?>
+                                        <option value="<?php echo $u['id']; ?>" <?php echo $ticket['assigned_to'] == $u['id'] ? 'selected' : ''; ?>>
+                                            <?php echo htmlspecialchars($u['name']); ?>
+                                        </option>
+                                    <?php endif; ?>
                                 <?php endforeach; ?>
                             </select>
                         </div>
